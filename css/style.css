@@ -1,0 +1,64 @@
+:root {
+    --bs-primary-rgb: 30, 32, 43 !important;
+    --bs-dark-rgb: 50, 53, 68 !important;
+    --bs-info-rgb: 0, 154, 216 !important;
+}
+
+button {
+    --bs-btn-bg: #009ad8 !important;
+    --bs-btn-hover-bg: #009ad8 !important;
+    --bs-btn-border-color: #009ad8 !important;
+    --bs-btn-hover-border-color: #009ad8 !important;
+}
+
+/* Navbar */
+.nav-link {
+    --bs-border-width: 2px !important;
+    border: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color) !important;
+    border-color: transparent !important;
+    transition: all 0.5s;
+}
+
+.nav-link.active, .nav-link:hover {
+    color: rgba(var(--bs-info-rgb),var(--bs-text-opacity)) !important;
+    border-color: rgba(var(--bs-info-rgb),var(--bs-border-opacity)) !important;
+}
+
+
+/* Main */
+#main {
+    background-image: url(../img/banner.png);
+    background-position: top center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+input::placeholder, textarea::placeholder{
+    --bs-text-opacity: 1;
+    color: rgba(var(--bs-secondary-rgb),var(--bs-text-opacity)) !important;
+}
+
+.form-group button {
+    top: 0.5rem;
+    right: 0.5rem;
+}
+
+/* Footer */
+footer ul li {
+    width: 2.5rem;
+    /* height: 2.5rem; */
+}
+
+
+/* Breadcrumb */
+
+.breadcrumb-item + .breadcrumb-item::before {
+    content: " " !important;
+    display: inline-block !important;
+    width: 12px;
+    height: 100%;
+    background: url(../img/arrow-gray.png) no-repeat;
+    background-position: center center;
+    background-size: contain;
+    margin-right: 7px;
+}
